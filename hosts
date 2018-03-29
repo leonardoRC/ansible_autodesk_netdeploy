@@ -1,0 +1,12 @@
+[windows]
+
+test3 ansible_host=110.241.13.183
+
+[windows:vars]
+ansible_connection: winrm
+ansible_winrm_transport: basic
+ansible_user: user
+#ansible_password: asd123!@#
+ansible_port: 5986
+ansible_winrm_server_cert_validation: ignore
+

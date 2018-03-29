@@ -1,0 +1,10 @@
+---
+#pinga os clientes listados para ver se o anssible ta rodando
+- name: Ping the target - ensure we have sudo and ansible works
+  hosts: all
+  vars:
+
+  roles:
+    - { role: ping }
+
+  tasks:
