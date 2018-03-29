@@ -1,0 +1,56 @@
+install rede
+
+
+utilizando ansible
+http://docs.ansible.com/ansible/latest/modules/win_package_module.html
+
+
+
+psexec \\remote-pc -u “DOMAIN\Administrator” -p “password” cmd /c “msiexec.exe /i “\\server\share\application.msi”
+/quiet /norestart”
+
+
+
+Prezado Antonio, Fernadno e Gever, boa tarde.
+
+
+
+Conforme solicitado na conferência inicial da auditoria, segue a resposta do time técnico sobre a atualização das licenças Autodesk:
+
+
+
+A desinstalação e o update não dá para aplicar em batch via os recursos que temos no instalador (talvez criando uma rotina pelo windows?), mas para instalação silenciosa é possível gerar um deployment. Veja aqui:
+
+https://knowledge.autodesk.com/support/autocad/learn-explore/caas/sfdcarticles/sfdcarticles/How-do-I-build-a-deployment.html
+
+
+
+Também dá para incluir updates no deployment:
+
+https://knowledge.autodesk.com/support/autocad/learn-explore/caas/sfdcarticles/sfdcarticles/How-to-add-updates-to-an-AutoCAD-2018-deployment.html
+
+
+
+Com o deployment pronto é só distribuir e rodar.
+
+
+
+Aqui você encontra um pouco da teoria de deployment para a Autodesk:
+
+https://knowledge.autodesk.com/customer-service/network-license-administration/network-deployment/overview-deployments/about-deployments
+
+(Está um pouco desatualizado, mas segue útil). Importante ressaltar que o licenciamento precisa ser de multi-usuário.
+
+
+
+Acredito que as informações do time técnico possam ajuda-los. Se houver dúvidas adicionais me avise  posso coloca-los em contato.
+
+
+http://help.autodesk.com/view/INSTALL_LICENSE/2015/ENU/?guid=GUID-E6B5B8C0-C2FF-41EB-B527-58D14CE3AE36
+
+
+
+
+
+
+
